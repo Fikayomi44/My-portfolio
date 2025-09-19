@@ -21,32 +21,76 @@
   </head>
   <body class="bg-gray-900 text-gray-200 font-sans">
     <!-- Hero Section -->
-    <section
-      class="h-screen flex gap-[10rem] flex-col md:flex-row items-center justify-center px-2"
-    >
-      <!-- Text -->
-      <div class="text-center md:text-left space-y-20 max-w-xl">
-        <h1 class="text-5xl font-extrabold mb-30">
-          WELCOME TO <br />
-          <span class="italic text-purple-400">MY PORTFOLIO</span>
-        </h1>
-        <p class="text-lg text-gray-300 italic">
-          Jolayemi Olufikayomi | Full Stack Developer | Video Editor
-        </p>
-        <button
-          onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
-          class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold shadow-lg"
-        >
-          Work With Me Today
-        </button>
+    <section id="home" class="relative h-screen w-full bg-black">
+      <!-- Background Image with fixed effect -->
+      <div
+        class="absolute inset-0 bg-[url('image/bg.jpg')] bg-cover bg-center bg-fixed opacity-90"
+      ></div>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+
+      <!-- Header -->
+      <header
+        class="fixed top-0 left-0 w-full flex justify-between items-center px-10 py-6 text-white z-20"
+      >
+        <h1 class="text-lg font-bold">Jolayemi Olufikayomi</h1>
+        <nav>
+          <ul class="flex gap-[2rem] space-x-8 text-lg">
+            <li>
+              <a
+                onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' })"
+                class="hover:text-purple-400 cursor-pointer"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="document.getElementById('who').scrollIntoView({ behavior: 'smooth' })"
+                class="hover:text-purple-400 cursor-pointer"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })"
+                class="hover:text-purple-400 cursor-pointer"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+                class="text-lg hover:text-purple-400 cursor-pointer"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Center Text -->
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10"
+      >
+        <h2 class="text-5xl font-bold">Hi, I'm Jolayemi Olufikayomi</h2>
       </div>
-      <!-- Image -->
-      <div class="mt-10 md:mt-0 md:ml-12">
-        <img
-          src="image/bg.jpg"
-          alt="Jolayemi Sunday Olufikayomi"
-          class="rounded-2xl shadow-lg w-80 md:w-96"
-        />
+
+      <!-- Bottom Left Text -->
+      <div
+        class="absolute bottom-6 left-10 text-white text-lg z-10 border p-2 rounded-2xl bg-none"
+      >
+        Full Stack Developer | Video Editor
+      </div>
+
+      <!-- Bottom Right Button -->
+      <div class="absolute bottom-6 right-10 z-10">
+        <button
+          onclick="document.getElementById('who').scrollIntoView({ behavior: 'smooth' })"
+          class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg text-white font-semibold shadow-lg"
+        >
+          Work with me today
+        </button>
       </div>
     </section>
 
@@ -57,50 +101,74 @@
       </h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="p-6 bg-gray-700 rounded-xl shadow">
-          💻 A passionate Web Designer who loves turning ideas into reality.
+          💻 A passionate Web Designer who is fluent in
+          <span class="text-purple-400">HTML</span>,
+          <span class="text-purple-400">CSS</span>,
+          <span class="text-purple-400">React</span> and
+          <span class="text-purple-400">JavaScript</span>, crafting visually
+          appealing and user-friendly websites.
         </div>
         <div class="p-6 bg-gray-700 rounded-xl shadow">
-          🎬 Skilled Video Editor, creating smooth and engaging visuals.
+          🎬 Skilled Video Editor, creating smooth and engaging visuals using
+          <span class="text-purple-400">Premiere Pro</span>,
+          <span class="text-purple-400">After Effects</span>,
+          <span class="text-purple-400">CapCut</span>, and
+          <span class="text-purple-400">DaVinci Resolve</span>.
         </div>
         <div class="p-6 bg-gray-700 rounded-xl shadow">
-          📚 Final Year Computer Science Student with a curious mind.
+          📚 Final Year Computer Science Student with a curious mind and a
+          strong passion for technology. Experienced in Web development,
+          problem-solving, and eager to explore new trends in the tech industry.
+          Dedicated to continuous learning and applying knowledge to real-world
+          challenges.
         </div>
         <div class="p-6 bg-gray-700 rounded-xl shadow">
-          🚀 Always learning, building, and pushing creative boundaries.
+          🚀 Always learning, building, and pushing creative boundaries in tech
+          and media, open to collaborations, solving problems, and making a
+          positive impact through technology.
         </div>
       </div>
     </section>
 
     <!-- Education & Work + Pie Chart -->
     <section
-      class="py-20 px-2 max-w-6xl mx-auto grid md:grid-cols-2 gap-17 text-center"
+      class="py-20 px-2 max-w-6xl mx-auto grid md:grid-cols-2 gap-20 text-center"
     >
       <!-- Left Side -->
       <div>
-        <h2 class="text-4xl font-bold italic mb-4">Education:</h2>
+        <h2 class="text-4xl text-left font-bold italic mb-4">Education:</h2>
         <ul
-          class="list-disc list-inside space-y-6 pl-5 pt-10 text-gray-300 font-[Pacifico]"
+          class="list-disc text-left list-inside space-y-6 pl-5 pt-10 text-gray-300 font-[Pacifico]"
         >
-          <li>Point 130</li>
-          <li>Point 77</li>
-          <li>Point 3</li>
+          <li>
+            St Joseph nursry and Primary school GRA, Ilorin, kwara State,
+            Nigeria
+          </li>
+          <li>Chapel Secondary School oke-odo, Ilorin, kwara State, Nigeria</li>
+          <li>
+            Presently a 400 level student of Redeemer's University ede, Osun
+            State, Nigeria
+          </li>
         </ul>
       </div>
       <div>
-        <h2 class="text-4xl font-bold italic mb-4 mb-4">Work Experience:</h2>
+        <h2 class="text-4xl text-left font-bold italic mb-4 mb-4">
+          Work Experience:
+        </h2>
         <ul
-          class="list-disc list-inside space-y-6 pl-5 pt-10 text-gray-300 font-[Pacifico]"
+          class="list-disc text-left list-inside space-y-6 pl-5 pt-10 text-gray-300 font-[Pacifico]"
         >
-          <li>Point 1</li>
-          <li>Point 2</li>
-          <li>Point 3</li>
+          <li>
+            6 months siwes program at Softrays Information Technology @ sanrab,
+            Ilorin, kwara State, Nigeria
+          </li>
         </ul>
       </div>
       <!-- Right Side -->
     </section>
 
     <!-- Projects -->
-    <section class="py-20 px-6 bg-gray-800">
+    <section id="projects" class="py-20 px-6 bg-gray-800">
       <h2 class="text-6xl italic font-bold text-center mt-7 mb-20">
         My Projects
       </h2>
@@ -250,8 +318,13 @@
     <footer
       class="bg-gray-950 py-3 text-center text-gray-100 font-[500] text-[13px]"
     >
-      © 2025 <a href="https://github.com/Fikayomi44">Motion</a> All rights
-      reserved.
+      © 2025
+      <a
+        class="text-purple-400 hover:underline"
+        href="https://github.com/Fikayomi44"
+        >Motion</a
+      >
+      All rights reserved.
     </footer>
 
     <!-- FontAwesome -->
