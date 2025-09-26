@@ -32,11 +32,11 @@
 
       <!-- Header -->
       <header
-        class="fixed top-0 left-0 w-full flex justify-between items-center px-10 py-6 text-white z-20"
+        class="hidden sm:flex fixed top-0 left-0 w-full flex justify-between items-center px-10 py-6 text-white z-20"
       >
         <h1 class="text-lg font-bold">Jolayemi Olufikayomi</h1>
         <nav>
-          <ul class="flex gap-[2rem] space-x-8 text-lg">
+          <ul class="flex gap-[2rem] space-x-8 text-lg sm:text-sm">
             <li>
               <a
                 onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' })"
@@ -61,7 +61,7 @@
             <li>
               <a
                 onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
-                class="text-lg hover:text-purple-400 cursor-pointer"
+                class="hover:text-purple-400 cursor-pointer"
                 >Contact</a
               >
             </li>
@@ -73,21 +73,23 @@
       <div
         class="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10"
       >
-        <h2 class="text-5xl font-bold">Hi, I'm Jolayemi Olufikayomi</h2>
+        <h2 class="text-2xl sm:text-5xl font-bold">
+          Hi, I'm Jolayemi Olufikayomi
+        </h2>
       </div>
 
       <!-- Bottom Left Text -->
       <div
-        class="absolute bottom-6 left-10 text-white text-lg z-10 border p-2 rounded-2xl bg-none"
+        class="absolute left-3 text-sm p-1 sm: bottom-6 left-10 text-white text-lg z-10 border p-2 rounded-2xl bg-none"
       >
-        Full Stack Developer | Video Editor
+        Full Stack Developer
       </div>
 
       <!-- Bottom Right Button -->
-      <div class="absolute bottom-6 right-10 z-10">
+      <div class="absolute bottom-6 z-10 right-3 sm:right-10">
         <button
           onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
-          class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg text-white font-semibold shadow-lg"
+          class="right-3 text-sm p-1 px-3 py-1 bg-purple-600 sm: hover:bg-purple-700 px-6 py-3 rounded-2xl text-white font-semibold shadow-lg"
         >
           Work with me today
         </button>
@@ -136,7 +138,9 @@
     >
       <!-- Left Side -->
       <div>
-        <h2 class="text-4xl text-left font-bold italic mb-4">Education:</h2>
+        <h2 class="text-left font-bold italic mb-4 text-2xl sm:text-4xl">
+          Education:
+        </h2>
         <ul
           class="list-disc text-left list-inside space-y-6 pl-5 pt-10 text-gray-300 font-[Pacifico]"
         >
@@ -152,7 +156,7 @@
         </ul>
       </div>
       <div>
-        <h2 class="text-4xl text-left font-bold italic mb-4 mb-4">
+        <h2 class="text-left font-bold italic mb-4 mb-4 text-2xl sm:text-4xl">
           Work Experience:
         </h2>
         <ul
@@ -169,17 +173,19 @@
 
     <!-- Projects -->
     <section id="projects" class="py-20 px-6 bg-gray-800">
-      <h2 class="text-6xl italic font-bold text-center mt-7 mb-20">
+      <h2 class="italic font-bold text-center mt-7 mb-20 text-4xl sm:text-6xl">
         My Projects
       </h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-20 sm:gap-10"
+      >
         <div
           class="bg-gray-700 shadow hover:shadow-3xl transition p-4 text-center"
         >
           <img
             src="image/diankoo.jpg"
             alt="Project 1"
-            class="rounded-lg mb-8 w-[400px] h-[400px] object-cover"
+            class="rounded-lg mb-8 h-[400px] object-cover w-[350px] w-[400px]"
           />
           <h3 class="text-xl font-semibold">
             <a
@@ -277,9 +283,11 @@
     <!-- Reach Out to Me -->
     <section
       id="contact"
-      class="h-[25rem] pt-20 px-2 max-w-5xl mx-auto justify-center"
+      class="pt-20 pb-[3rem] px-2 max-w-5xl mx-auto justify-center md:h-[25rem]"
     >
-      <h2 class="text-5xl font-bold text-center mb-20 italic text-purple-400">
+      <h2
+        class="font-bold text-center mb-20 italic text-purple-400 text-3xl sm:text-5xl"
+      >
         Reach Out to Me
       </h2>
       <div class="grid md:grid-cols-3 gap-20">
@@ -315,8 +323,9 @@
     </section>
 
     <!-- Footer -->
+
     <footer
-      class="bg-gray-950 py-3 text-center text-gray-100 font-[500] text-[13px]"
+      class="bg-gray-950 py-3 text-center text-gray-100 font-[500] text-[10px] sm:text-[13px]"
     >
       © 2025
       <a
